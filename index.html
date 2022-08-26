@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IceTimer</title>
+    <link rel="stylesheet" href="res/style/common.css">
+    <link rel="stylesheet" href="res/style/timer.css">
+    <!-- 载入前置库 -->
+    <script src="lib/jquery-1.7.2.min.js"></script>
+    <script src="lib/salt-timer.js"></script>
+    <!-- 载入前置类 -->
+    <script src="res/class/IceTimer.js"></script>
+</head>
+<body>
+    <div id="navbar">
+        <h1>IceTimer</h1>
+        <div class="navbar-right">
+            <span class="navbar-item" id="navbar-theme-switch">夜间模式</span>
+            <span class="navbar-item" id="navbar-settings">参数设置</span>
+        </div>
+    </div>
+    <div id="header">
+        <button id="header-new-timer">新建计时器</button>
+    </div>
+    <div class="page-content">
+        <div id="spr-timer-list">
+            
+        </div>
+    </div>
+
+    <div id="timer-create-modal">
+        <div class="timer-create-header">
+            <input type="text" id="timer-create-form-title" placeholder="标 题">
+        </div>
+        <div class="timer-create-content">
+            <div class="form-item">
+                <span class="form-item-label">开始时间</span>
+                <span class="form-item-content">
+                    <input type="text" id="input-date-y">
+                    <span>年</span>
+                    <input type="text" id="input-date-m">
+                    <span>月</span>
+                    <input type="text" id="input-date-d">
+                    <span>日</span>
+                    <input type="text" id="input-date-time">
+                </span>
+            </div>
+            <div class="form-item">
+                <span class="form-item-label">描述</span>
+                <span class="form-item-content">
+                    <input type="text" id="input-summary" class="w-full">
+                </span>
+            </div>
+            <div class="form-item">
+                <span class="form-item-content">
+                    <input type="button" id="timer-create-submit" value="确定">
+                    <input type="button" id="timer-create-cancel" value="取消">
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <span>© Sheep-realms | 这是一个 Demo，仅用于展示效果，不代表最终效果</span>
+    </div>
+
+    <script src="res/script/common.js"></script>
+    <script src="res/script/example.js"></script>
+</body>
+</html>
